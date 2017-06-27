@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tv_textInput"
+    android:layout_width="80px"
+    android:layout_height="60px"
+    android:background="@drawable/input_item_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:text="A"
+    android:textSize="30px"
+    android:textColor="@color/white"
+    android:gravity="center"
+    >
+</TextView>

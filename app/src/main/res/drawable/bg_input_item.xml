@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!--填充不透明度10%-->
+    <solid android:color="#00ffffff" />
+
+    <!--描边不透明度20%-->
+    <stroke
+        android:width="@dimen/px1"
+        android:color="#32ffffff" />
+
+</shape>

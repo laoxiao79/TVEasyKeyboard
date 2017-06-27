@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context="com.laoxiao.tv.tveasykeyboard.MainActivity">
+
+    <com.laoxiao.tv.tveasykeyboard.ui.CustomEasyTVKeyboard
+        android:id="@+id/customInputView"
+        android:layout_width="480px"
+        android:layout_height="710px"
+        />
+
+</RelativeLayout>

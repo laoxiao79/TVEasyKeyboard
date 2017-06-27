@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="480px"
+    android:layout_height="710px"
+    android:orientation="vertical"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="460px"
+        android:layout_height="90px"
+        android:background="@drawable/item_focused_bg"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="10px"
+        >
+
+        <TextView
+            android:id="@+id/tv_input"
+            android:layout_width="370px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
+            android:layout_marginRight="10px"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textSize="40px"
+            android:ellipsize="start"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/search_icon"
+            android:paddingLeft="-20px"
+            android:paddingRight="-20px"
+            />
+
+        <ImageView
+            android:id="@+id/search_icon"
+            android:layout_width="40px"
+            android:layout_height="40px"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20px"
+            android:layout_marginTop="5px"
+            android:src="@mipmap/ic_app_search"
+            />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_keylist"
+        android:layout_width="match_parent"
+        android:layout_height="540px"
+        android:layout_below="@+id/rl_search"
+         />
+
+    <RelativeLayout
+        android:id="@+id/rl_remove"
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="20px"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:id="@+id/remove_all_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginLeft="10px"
+            android:gravity="center"
+            android:background="@drawable/input_delete_item_bg"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_item_bg"
+                android:text="清空"
+                android:gravity="center"
+                android:textSize="28px"
+                android:padding="10px"
+                android:textColor="@color/white_alpha_40"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/delete_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginRight="10px"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@drawable/input_delete_item_bg"
+            >
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_item_bg"
+                android:gravity="center"
+                android:padding="10px"
+                android:text="删除"
+                android:textColor="@color/white_alpha_40"
+                android:textSize="28px" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
